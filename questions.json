@@ -147,7 +147,7 @@
     "option4": "Desalinated water"
   },
   {
-    "question": "Which industry is largest CO? emitter?",
+    "question": "Which industry is largest CO2 emitter?",
     "option1": "Energy sector",
     "option2": "Transport",
     "option3": "Agriculture",
@@ -371,7 +371,7 @@
     "option4": "Automobile Industry"
   },
   {
-    "question": "Assertion (A): Carbon Footprint is measured in terms of equivalent CO? emissions.\nReason (R): Different greenhouse gases (like CH?, N?O) are converted into CO? equivalents using their Global Warming Potential (GWP).",
+    "question": "Assertion (A): Carbon Footprint is measured in terms of equivalent CO2 emissions.\nReason (R): Different greenhouse gases (like CH2, N2O) are converted into CO2 equivalents using their Global Warming Potential (GWP).",
     "option1": "Both A and R are true, and R is the correct explanation of A",
     "option2": "Both A and R are true, but R is not the correct explanation of A",
     "option3": "A is true, but R is false",
