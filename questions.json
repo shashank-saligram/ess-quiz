@@ -420,423 +420,255 @@
     "option4": "World Bank"
   },
   {
-    "question": "Which of the following is NOT a principle of the 3R concept?",
-    "option1": "Refuel",
-    "option2": "Reduce",
-    "option3": "Reuse",
-    "option4": "Recycle"
+    "question": "The Millennium Development Goals (MDGs) were adopted in which year?",
+    "option1": 2000,
+    "option2": 1992,
+    "option3": 2010,
+    "option4": 2015
   },
   {
-    "question": "Zero waste strategy aims at:",
-    "option1": "Complete elimination of waste generation",
-    "option2": "Reducing cost of production",
-    "option3": "Producing energy from waste",
-    "option4": "Using only renewable resources"
+    "question": "How many goals were included in the Millennium Development Goals framework?",
+    "option1": 8,
+    "option2": 10,
+    "option3": 12,
+    "option4": 15
   },
   {
-    "question": "In circular economy, the main focus is on:",
-    "option1": "Product reuse and resource efficiency",
-    "option2": "Linear consumption of resources",
-    "option3": "Increasing fossil fuel use",
-    "option4": "Exporting waste to other countries"
+    "question": "The primary objective of the MDGs was to reduce which of the following by 2015?",
+    "option1": "Global poverty",
+    "option2": "Industrial pollution",
+    "option3": "Carbon emissions",
+    "option4": "Population growth"
   },
   {
-    "question": "The linear economy model follows which sequence?",
-    "option1": "Extract-Produce-Dispose",
-    "option2": "Make-Use-Recycle",
-    "option3": "Reuse-Recycle-Remanufacture",
-    "option4": "Reduce-Reuse-Recycle"
+    "question": "The Millennium Development Goals were succeeded by which global agenda?",
+    "option1": "Sustainable Development Goals (SDGs)",
+    "option2": "Paris Climate Agreement",
+    "option3": "Kyoto Protocol",
+    "option4": "Green Economy Initiative"
   },
   {
-    "question": "Cradle-to-cradle approach is linked with:",
-    "option1": "Circular economy",
-    "option2": "Linear economy",
-    "option3": "Fossil energy use",
-    "option4": "Urban sprawl"
+    "question": "The main international standard for Environmental Management Systems is:",
+    "option1": "ISO 14001",
+    "option2": "ISO 9001",
+    "option3": "ISO 45001",
+    "option4": "ISO 50001"
   },
   {
-    "question": "Which international organization popularized the concept of circular economy?",
-    "option1": "Ellen MacArthur Foundation",
-    "option2": "UNDP",
-    "option3": "World Bank",
-    "option4": "UNEP"
+    "question": "The primary purpose of an Environmental Management System is to:",
+    "option1": "Improve environmental performance",
+    "option2": "Increase production speed",
+    "option3": "Reduce employee turnover",
+    "option4": "Enhance marketing strategy"
   },
   {
-    "question": "Industrial symbiosis in circular economy refers to:",
-    "option1": "Sharing of waste/resources among industries",
-    "option2": "Disposal of waste in landfills",
-    "option3": "Building energy-efficient homes",
-    "option4": "Offsetting carbon emissions"
-  },
-  {
-    "question": "A Zero-waste city ensures:",
-    "option1": "100% recycling and recovery of materials",
-    "option2": "100% incineration of waste",
-    "option3": "Disposal in controlled landfills",
-    "option4": "More energy consumption"
-  },
-  {
-    "question": "LCA stands for:",
-    "option1": "Life Cycle Assessment",
-    "option2": "Life Carbon Analysis",
-    "option3": "Low Carbon Adaptation",
-    "option4": "Long-term Climate Action"
-  },
-  {
-    "question": "ISO 14040 standard deals with:",
-    "option1": "Life Cycle Assessment framework",
-    "option2": "Environmental auditing",
-    "option3": "Energy labeling",
-    "option4": "Wastewater treatment"
-  },
-  {
-    "question": "Which is NOT a phase of Life Cycle Assessment?",
-    "option1": "Revenue generation",
-    "option2": "Goal and scope definition",
-    "option3": "Inventory analysis",
-    "option4": "Impact assessment"
-  },
-  {
-    "question": "Functional unit in LCA represents:",
-    "option1": "Standardized measure of service/product performance",
-    "option2": "Total cost of product",
-    "option3": "The emission per factory",
-    "option4": "Recyclable component"
-  },
-  {
-    "question": "Cradle-to-grave assessment includes:",
-    "option1": "Extraction to disposal",
-    "option2": "Recycling only",
-    "option3": "Use phase only",
-    "option4": "Transport emissions only"
-  },
-  {
-    "question": "ISO 14001 primarily relates to:",
-    "option1": "Environmental management systems",
-    "option2": "Occupational health and safety",
-    "option3": "Product quality standards",
+    "question": "The 'Plan-Do-Check-Act' (PDCA) cycle is associated with:",
+    "option1": "Continuous improvement in EMS",
+    "option2": "Wastewater treatment",
+    "option3": "Hazard identification",
     "option4": "Energy audits"
   },
   {
-    "question": "Carbon footprint assessment is an example of:",
-    "option1": "LCA impact assessment",
-    "option2": "Environmental audit",
-    "option3": "Cost benefit analysis",
-    "option4": "Green building certification"
+    "question": "In an EMS, environmental policy is usually:",
+    "option1": "A statement of the organization's commitment to the environment",
+    "option2": "A financial target",
+    "option3": "A safety regulation",
+    "option4": "A marketing plan"
   },
   {
-    "question": "In LCA, midpoint indicators measure:",
-    "option1": "Cause-effect chain at problem level",
-    "option2": "Socio-economic effects",
-    "option3": "Direct financial savings",
-    "option4": "Biodiversity conservation"
+    "question": "What does the term 'water footprint' primarily measure?",
+    "option1": "Total volume of freshwater used directly and indirectly by an individual or organization",
+    "option2": "Amount of wastewater generated",
+    "option3": "Water pollution index",
+    "option4": "Energy footprint"
   },
   {
-    "question": "Which of the following is a limitation of LCA?",
-    "option1": "It requires assumptions and large data",
-    "option2": "It ignores energy consumption",
-    "option3": "It cannot compare materials",
-    "option4": "It cannot be standardized"
+    "question": "Which component of water footprint refers to rainwater consumed in the production process?",
+    "option1": "Green water footprint",
+    "option2": "Blue water footprint",
+    "option3": "Grey water footprint",
+    "option4": "Black water footprint"
   },
   {
-    "question": "EIA is mandated in India under which Act?",
-    "option1": "Environment Protection Act 1986",
-    "option2": "Air Act 1981",
-    "option3": "Water Act 1974",
-    "option4": "Factories Act 1948"
+    "question": "Which of the following sectors generally has the largest water footprint globally?",
+    "option1": "Agriculture sector",
+    "option2": "Transport sector",
+    "option3": "Service sector",
+    "option4": "Industrial sector"
   },
   {
-    "question": "Scoping in EIA refers to:",
-    "option1": "Identifying potential impacts and issues",
-    "option2": "Monitoring post-project impacts",
-    "option3": "Auditing industrial waste",
-    "option4": "Licensing industries"
+    "question": "The 'blue water footprint' refers to the use of which type of water?",
+    "option1": "Surface and groundwater used for production",
+    "option2": "Rainwater used for crops",
+    "option3": "Recycled water usage",
+    "option4": "Wastewater used for irrigation"
   },
   {
-    "question": "Which of the following is a limitation of EIA?",
-    "option1": "Cannot predict cumulative impacts accurately",
-    "option2": "Prevents pollution",
-    "option3": "Protects biodiversity",
-    "option4": "Encourages renewable use"
+    "question": "The 'grey water footprint' represents:",
+    "option1": "The volume of freshwater required to assimilate pollutants",
+    "option2": "The amount of rainwater used for crops",
+    "option3": "The recycled water volume used in industry",
+    "option4": "The water used for cooling systems"
   },
   {
-    "question": "Rapid EIA refers to assessment within:",
-    "option1": "3 months",
-    "option2": "1 week",
-    "option3": "6 months",
-    "option4": "1 year"
+    "question": "The total water footprint of a product includes:",
+    "option1": "Green, blue, and grey water components",
+    "option2": "Only blue water",
+    "option3": "Only grey water",
+    "option4": "Only groundwater"
   },
   {
-    "question": "Social impact assessment (SIA) is usually part of:",
-    "option1": "EIA",
-    "option2": "LCA",
-    "option3": "ISO 9001",
-    "option4": "Green building certification"
+    "question": "Virtual water refers to:",
+    "option1": "The hidden flow of water used in producing goods and services",
+    "option2": "Water stored in virtual databases",
+    "option3": "Surface water stored in dams",
+    "option4": "Recycled wastewater"
   },
   {
-    "question": "Which one is NOT an EIA methodology?",
-    "option1": "Pareto chart",
-    "option2": "Checklist method",
-    "option3": "Overlay mapping",
-    "option4": "Network method"
+    "question": "Reducing water footprint in agriculture can be achieved by:",
+    "option1": "Drip irrigation and crop selection",
+    "option2": "Increasing fertilizer use",
+    "option3": "Expanding irrigation areas",
+    "option4": "Pumping more groundwater"
   },
   {
-    "question": "The public hearing stage in EIA is important for:",
-    "option1": "Transparency and participation",
-    "option2": "Industrial profit",
-    "option3": "Technical validation only",
-    "option4": "Environmental clearance bypass"
+    "question": "Which organization publishes the global water footprint assessment reports?",
+    "option1": "Water Footprint Network",
+    "option2": "World Bank",
+    "option3": "UNEP",
+    "option4": "UNFCCC"
   },
   {
-    "question": "Which rating system is used in India for green buildings?",
-    "option1": "GRIHA",
-    "option2": "LEED",
-    "option3": "BREEAM",
-    "option4": "WELL"
+    "question": "Carbon footprint primarily measures:",
+    "option1": "Total greenhouse gas emissions caused directly and indirectly by an individual, organization, or product",
+    "option2": "Only carbon dioxide in the atmosphere",
+    "option3": "Energy consumption of a household",
+    "option4": "Water usage in production"
   },
   {
-    "question": "Fly ash bricks are considered a:",
-    "option1": "Green building material",
-    "option2": "Hazardous material",
-    "option3": "Non-renewable material",
-    "option4": "Synthetic material"
+    "question": "Which of the following contributes the most to an individual's carbon footprint?",
+    "option1": "Transportation (cars, planes)",
+    "option2": "Wearing clothes",
+    "option3": "Watching TV",
+    "option4": "Using smartphones"
   },
   {
-    "question": "Which of the following is NOT a feature of green buildings?",
-    "option1": "High embodied energy materials",
-    "option2": "Natural lighting",
-    "option3": "Energy efficiency",
-    "option4": "Rainwater harvesting"
+    "question": "Which gases are included in the carbon footprint calculation?",
+    "option1": "CO2, CH4, N2O, and other greenhouse gases",
+    "option2": "Oxygen and nitrogen",
+    "option3": "Hydrogen and helium",
+    "option4": "Only CO2"
   },
   {
-    "question": "Embodied energy of a material refers to:",
-    "option1": "Total energy consumed during production, transport, and installation",
-    "option2": "Energy used in lighting the building",
-    "option3": "Operational energy",
-    "option4": "Energy saved through recycling"
-  },
-  {
-    "question": "The concept of passive solar design in buildings aims to:",
-    "option1": "Minimize use of air conditioning",
-    "option2": "Increase fossil fuel dependence",
-    "option3": "Reduce natural lighting",
-    "option4": "Increase artificial heating"
-  },
-  {
-    "question": "Which material has the highest embodied energy?",
-    "option1": "Glass",
-    "option2": "Cement",
-    "option3": "Timber",
-    "option4": "Brick"
-  },
-  {
-    "question": "Net-zero energy buildings are those that:",
-    "option1": "Produce as much energy as they consume",
-    "option2": "Do not use any energy",
-    "option3": "Are built with only recycled materials",
-    "option4": "Generate energy from fossil fuels"
-  },
-  {
-    "question": "Which is the most sustainable transport mode among the following?",
-    "option1": "Bicycle",
-    "option2": "Car",
-    "option3": "Bus",
-    "option4": "Airplane"
-  },
-  {
-    "question": "The primary aim of sustainable transport is:",
-    "option1": "Reducing carbon emissions and congestion",
-    "option2": "Promoting private vehicle ownership",
-    "option3": "Building more highways",
-    "option4": "Encouraging air travel"
-  },
-  {
-    "question": "Electric vehicles are more sustainable mainly because:",
-    "option1": "They have zero tailpipe emissions",
-    "option2": "They are cheaper than petrol cars",
-    "option3": "They require no energy input",
-    "option4": "They increase fossil fuel demand"
-  },
-  {
-    "question": "Which of the following is NOT a non-conventional energy source?",
-    "option1": "Nuclear",
-    "option2": "Solar",
-    "option3": "Wind",
-    "option4": "Biomass"
-  },
-  {
-    "question": "Hydrogen fuel cells produce electricity with by-product:",
-    "option1": "Water",
-    "option2": "CO2?",
-    "option3": "Sulphur",
-    "option4": "Methane"
-  },
-  {
-    "question": "Energy cycle related to emission and sequestration mainly refers to:",
-    "option1": "Carbon cycle",
-    "option2": "Sulphur cycle",
-    "option3": "Nitrogen cycle",
-    "option4": "Phosphorus cycle"
-  },
-  {
-    "question": "Carbon sequestration can be enhanced by:",
-    "option1": "Afforestation",
-    "option2": "Deforestation",
-    "option3": "Mining activities",
+    "question": "Reducing carbon footprint can be achieved by:",
+    "option1": "Using renewable energy and energy-efficient appliances",
+    "option2": "Increasing meat consumption",
+    "option3": "Deforestation",
     "option4": "Burning fossil fuels"
   },
   {
-    "question": "Which renewable source is most location-specific?",
-    "option1": "Tidal",
-    "option2": "Solar",
-    "option3": "Wind",
-    "option4": "Biomass"
+    "question": "What is a carbon credit?",
+    "option1": "A permit allowing a company to emit a certain amount of CO2 or equivalent greenhouse gases",
+    "option2": "A tax on renewable energy",
+    "option3": "A permit for deforestation",
+    "option4": "A certificate for water usage"
   },
   {
-    "question": "Which technology is most suitable for decentralized rural electrification?",
-    "option1": "Solar PV",
-    "option2": "Nuclear",
-    "option3": "Coal-fired power",
-    "option4": "Gas turbines"
+    "question": "Carbon credits are mainly traded under which mechanism?",
+    "option1": "Cap-and-trade system",
+    "option2": "Free market energy exchange",
+    "option3": "Water conservation market",
+    "option4": "Biodiversity offset system"
   },
   {
-    "question": "Green engineering primarily aims at:",
-    "option1": "Designing products and processes with minimal environmental impact",
-    "option2": "Maximizing profit",
-    "option3": "Increasing fossil fuel efficiency",
-    "option4": "Reducing labor cost"
+    "question": "The purpose of carbon credits is to:",
+    "option1": "Encourage reduction of greenhouse gas emissions",
+    "option2": "Increase industrial production",
+    "option3": "Promote deforestation",
+    "option4": "Reduce water usage"
   },
   {
-    "question": "Eco-design principle in green engineering emphasizes:",
-    "option1": "Design for environment",
-    "option2": "Design for waste",
-    "option3": "Design for rapid obsolescence",
-    "option4": "Design for profit"
+    "question": "Which is not an SDG?",
+    "option1": "Space exploration for all",
+    "option2": "No poverty",
+    "option3": "Gender equality",
+    "option4": "Life on land"
   },
   {
-    "question": "Sustainable urbanization is MOST closely linked with:",
-    "option1": "Smart cities concept",
-    "option2": "Overpopulation",
-    "option3": "Industrialization",
-    "option4": "Urban sprawl"
+    "question": "The 'Polluter Pays Principle' was first articulated in:",
+    "option1": "OECD guidelines",
+    "option2": "Rio Declaration",
+    "option3": "Kyoto Protocol",
+    "option4": "Paris Agreement"
   },
   {
-    "question": "Which UN goal focuses on sustainable cities and communities?",
-    "option1": "SDG 11",
-    "option2": "SDG 9",
-    "option3": "SDG 10",
-    "option4": "SDG 13"
+    "question": "The main cause of climate change is:",
+    "option1": "Increase in greenhouse gas emissions due to human activity",
+    "option2": "Rotation of Earth",
+    "option3": "Plate tectonics",
+    "option4": "Solar eclipses"
   },
   {
-    "question": "Mixed land use planning in cities helps in:",
-    "option1": "Reducing commuting distances",
-    "option2": "Encouraging automobile use",
-    "option3": "Increasing pollution",
-    "option4": "Decreasing walkability"
+    "question": "Example of a successful environmental management case study in India:",
+    "option1": "Patancheru effluent treatment initiative",
+    "option2": "Dust Bowl management",
+    "option3": "Exxon Valdez oil spill",
+    "option4": "Chernobyl recovery"
   },
   {
-    "question": "Socio-economic sustainability in cities includes:",
-    "option1": "All of the above",
-    "option2": "Housing for all",
-    "option3": "Access to healthcare and education",
-    "option4": "Employment opportunities"
+    "question": "Which SDG promotes 'Decent Work and Economic Growth'�?",
+    "option1": 8,
+    "option2": 9,
+    "option3": 10,
+    "option4": 7
   },
   {
-    "question": "Which urban transport strategy reduces emissions most effectively?",
-    "option1": "Carpooling",
-    "option2": "Free parking zones",
-    "option3": "Express highways",
-    "option4": "Fuel subsidies"
+    "question": "The 2030 Agenda for Sustainable Development was adopted by:",
+    "option1": "United Nations",
+    "option2": "World Bank",
+    "option3": "IMF",
+    "option4": "WTO"
   },
   {
-    "question": "One key principle of sustainable urban development is:",
-    "option1": "Compact city design",
-    "option2": "Higher waste generation",
-    "option3": "Increasing car ownership",
-    "option4": "Relocation of industries only"
+    "question": "Which is a major goal of industrial ecology?",
+    "option1": "Waste from one process becomes input for another",
+    "option2": "Maximize extraction",
+    "option3": "Promote landfills",
+    "option4": "Focus on energy exports"
   },
   {
-    "question": "Which factor is NOT directly linked with sustainable urbanization?",
-    "option1": "Higher consumerism",
-    "option2": "Renewable energy adoption",
-    "option3": "Energy-efficient buildings",
-    "option4": "Urban greenery"
+    "question": "In environmental management, 'EMS' stands for:",
+    "option1": "Environmental Management System",
+    "option2": "Environmental Mapping Survey",
+    "option3": "Environmental Monitoring Station",
+    "option4": "Energy Management Setup"
   },
   {
-    "question": "Which is an example of technological change for sustainable cities?",
-    "option1": "All of the above",
-    "option2": "Solar rooftops",
-    "option3": "Smart grids",
-    "option4": "Electric mobility"
+    "question": "A company calculating its 'Scope 3 emissions'�is focusing on:",
+    "option1": "Indirect emissions from supply chains",
+    "option2": "Emissions from renewable sources",
+    "option3": "Direct emissions from its own processes",
+    "option4": "Vehicle emissions only"
   },
   {
-    "question": "A city that reuses treated wastewater for irrigation follows:",
-    "option1": "Zero waste principle",
-    "option2": "EIA",
-    "option3": "Fossil economy",
-    "option4": "ISO 9000"
+    "question": "Which SDG emphasizes partnerships to achieve the goals?",
+    "option1": 17,
+    "option2": 12,
+    "option3": 11,
+    "option4": 13
   },
   {
-    "question": "Which combination best ensures low-carbon concrete?",
-    "option1": "OPC + Fly Ash + GGBS",
-    "option2": "OPC + Plastic",
-    "option3": "OPC + Sand + Steel",
-    "option4": "OPC + Limestone only"
+    "question": "The Global Reporting Initiative (GRI) is associated with:",
+    "option1": "Sustainability reporting standards",
+    "option2": "Carbon credit trading",
+    "option3": "Ozone monitoring",
+    "option4": "Fossil fuel exploration"
   },
   {
-    "question": "Waste-to-energy plants fall under which sustainability practice?",
-    "option1": "Circular economy",
-    "option2": "Green engineering",
-    "option3": "Green transport",
-    "option4": "ISO 14040"
-  },
-  {
-    "question": "The major drawback of solar PV is:",
-    "option1": "Intermittent power generation",
-    "option2": "No emissions",
-    "option3": "Scalability",
-    "option4": "Easy installation"
-  },
-  {
-    "question": "In urban mobility, BRTS stands for:",
-    "option1": "Bus Rapid Transit System",
-    "option2": "Bio Renewable Transport Strategy",
-    "option3": "Built Renewable Transport Scheme",
-    "option4": "Battery Recycling Transport System"
-  },
-  {
-    "question": "Which is an example of sequestration technology?",
-    "option1": "Direct air capture",
-    "option2": "Steel production",
-    "option3": "Coal mining",
-    "option4": "Fossil fuel burning"
-  },
-  {
-    "question": "Life cycle cost analysis of a building would include:",
-    "option1": "Operation, maintenance, and disposal cost",
-    "option2": "Initial cost only",
-    "option3": "Decoration cost only",
-    "option4": "Land cost only"
-  },
-  {
-    "question": "Which one is a socio-economic benefit of green buildings?",
-    "option1": "All of the above",
-    "option2": "Reduced health costs",
-    "option3": "Increased productivity",
-    "option4": "Better indoor air quality"
-  },
-  {
-    "question": "Which practice directly aligns with Green Engineering?",
-    "option1": "Designing biodegradable plastics",
-    "option2": "Burning fossil fuels efficiently",
-    "option3": "Using asbestos in construction",
-    "option4": "Landfilling industrial waste"
-  },
-  {
-    "question": "Sustainable development is best described as:",
-    "option1": "Meeting present needs without compromising future generations",
-    "option2": "Unlimited growth at any cost",
-    "option3": "Maximum profit orientation",
-    "option4": "Exclusive use of fossil fuels" 
+    "question": "Which is an example of local-level sustainability initiative?",
+    "option1": "Community-based rainwater harvesting",
+    "option2": "UNFCCC meetings",
+    "option3": "G7 Summit",
+    "option4": "Paris Agreement"
   }
 ]
