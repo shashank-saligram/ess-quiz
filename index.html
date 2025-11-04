@@ -2,26 +2,21 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <title>MCQ Test</title>
-  <!-- Mobile responsiveness -->
+  <title>ESS Quiz</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    /* ---------------- Base Styling ---------------- */
     body {
       font-family: Arial, sans-serif;
       margin: 5%;
       line-height: 1.5;
       background-color: #f9f9f9;
       color: #222;
-      width: 100%;
-      min-width: 100%;
     }
 
     h1, h2 {
       text-align: center;
     }
 
-    /* Timer styling */
     .timer {
       font-size: 1.2em;
       font-weight: bold;
@@ -29,18 +24,15 @@
       text-align: center;
     }
 
-    /* Quiz container */
     #quiz {
       margin: 0 auto 20px auto;
-      max-width: 600px;
-      width: 100%;
-      padding: 15px;
+      max-width: 650px;
+      padding: 20px;
       background: #fff;
       border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
 
-    /* Options */
     .options label {
       display: block;
       margin-bottom: 10px;
@@ -52,7 +44,6 @@
       transform: scale(1.2);
     }
 
-    /* Buttons */
     button {
       margin: 5px 8px 5px 0;
       padding: 10px 15px;
@@ -73,10 +64,10 @@
       margin-top: 10px;
     }
 
-    /* Results & review */
     .correct { color: green; font-weight: bold; }
     .wrong { color: red; font-weight: bold; }
     .unanswered { color: orange; font-style: italic; }
+
     .answer-block {
       margin-bottom: 15px;
       border-bottom: 1px solid #ddd;
@@ -86,7 +77,6 @@
       padding: 10px;
     }
 
-    /* ----------- NEW: Score box styling ----------- */
     .score-box {
       background-color: #fffae6;
       border: 2px solid #ffd700;
@@ -99,7 +89,6 @@
       color: #b36200;
     }
 
-    /* Responsive adjustments */
     @media (max-width: 600px) {
       body { margin: 3%; }
       h1, h2 { font-size: 1.4em; }
@@ -110,7 +99,7 @@
   </style>
 </head>
 <body>
-<h1>MCQ Test</h1>
+<h1>ESS Quiz</h1>
 <div class="timer">Time Left: <span id="time">20:00</span></div>
 <div id="quiz"></div>
 
@@ -123,10 +112,11 @@
 <div id="result"></div>
 
 <script>
-/* ---------- Helpers ---------- */
+/* ------------------ Helper Functions ------------------ */
 function normalize(s) {
   return String(s || '').replace(/^"|"$/g, '').trim().toLowerCase();
 }
+
 function escapeHtml(str) {
   return String(str)
     .replace(/&/g, "&amp;")
@@ -135,27 +125,18 @@ function escapeHtml(str) {
     .replace(/"/g, "&quot;")
     .replace(/'/g, "&#39;");
 }
-function splitCSVRow(row) {
-  const res = [];
-  let cur = '';
-  let inQuotes = false;
-  for (let i = 0; i < row.length; i++) {
-    const ch = row[i];
-    if (ch === '"') {
-      if (inQuotes && row[i + 1] === '"') { cur += '"'; i++; } 
-      else inQuotes = !inQuotes;
-    } else if (ch === ',' && !inQuotes) {
-      res.push(cur);
-      cur = '';
-    } else {
-      cur += ch;
-    }
+
+/* Fisher–Yates Shuffle with random seed */
+function shuffleArray(array) {
+  const arr = array.slice();
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
   }
-  res.push(cur);
-  return res.map(s => s.trim());
+  return arr;
 }
 
-/* ---------- Globals ---------- */
+/* ------------------ Globals ------------------ */
 let allQuestions = [];
 let quizData = [];
 let currentQuestion = 0;
@@ -163,33 +144,7 @@ let userAnswers = {};
 let timer = null;
 let timeLeft = 0;
 
-/* ---------- CSV parsing ---------- */
-function parseCSV(data) {
-  const lines = data.split(/\r?\n/).map(l=>l.trim()).filter(l => l !== '');
-  if (lines.length <= 1) return [];
-  const out = [];
-  for (let i = 1; i < lines.length; i++) {
-    const fields = splitCSVRow(lines[i]);
-    if (fields.length < 5) continue;
-    const question = fields[0].replace(/^"|"$/g, '').trim();
-    const options = fields.slice(1,5).map(o => o.replace(/^"|"$/g, '').trim());
-    let correctText = options[0]; 
-    out.push({ question, options, correctText });
-  }
-  return out;
-}
-
-/* ---------- Shuffle ---------- */
-function shuffleArray(arr) {
-  const a = arr.slice();
-  for (let i = a.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [a[i], a[j]] = [a[j], a[i]];
-  }
-  return a;
-}
-
-/* ---------- Quiz lifecycle ---------- */
+/* ------------------ Timer ------------------ */
 function startTimer() {
   clearInterval(timer);
   timeLeft = 20 * 60;
@@ -210,16 +165,25 @@ function formatTime(sec) {
   return `${m}:${s < 10 ? '0' : ''}${s}`;
 }
 
+/* ------------------ Quiz Setup ------------------ */
 function prepareQuiz() {
   userAnswers = {};
   currentQuestion = 0;
-  quizData = shuffleArray(allQuestions).slice(0, 40).map(q => {
-    const opts = shuffleArray(q.options.slice());
-    return { question: q.question, options: opts, answerText: q.correctText };
+
+  // Deep shuffle for strong randomness
+  const shuffled = shuffleArray(allQuestions);
+  quizData = shuffled.slice(0, 40).map(q => {
+    const correct = q.options[0]; // option1 is correct by definition
+    const opts = shuffleArray(q.options.slice()); // randomize options
+    return {
+      question: q.question,
+      options: opts,
+      correctText: correct
+    };
   });
 }
 
-/* ---------- UI: show question ---------- */
+/* ------------------ Display Question ------------------ */
 function loadQuestion() {
   if (currentQuestion >= quizData.length) {
     submitQuiz();
@@ -231,7 +195,9 @@ function loadQuestion() {
   html += `<p>${escapeHtml(q.question)}</p><div class="options">`;
   for (let i = 0; i < q.options.length; i++) {
     const opt = q.options[i];
-    const checked = userAnswers[currentQuestion] !== undefined && normalize(userAnswers[currentQuestion]) === normalize(opt) ? 'checked' : '';
+    const checked = userAnswers[currentQuestion] &&
+                    normalize(userAnswers[currentQuestion]) === normalize(opt)
+                    ? 'checked' : '';
     html += `<label><input type="radio" name="answer" value="${i}" ${checked}> ${escapeHtml(opt)}</label>`;
   }
   html += '</div>';
@@ -239,6 +205,7 @@ function loadQuestion() {
   document.getElementById('prev').style.display = currentQuestion === 0 ? 'none' : 'inline-block';
 }
 
+/* ------------------ Navigation ------------------ */
 function saveAnswer() {
   const selected = document.querySelector('input[name="answer"]:checked');
   if (selected) {
@@ -256,6 +223,7 @@ document.getElementById('next').addEventListener('click', () => {
   currentQuestion++;
   loadQuestion();
 });
+
 document.getElementById('prev').addEventListener('click', () => {
   saveAnswer();
   if (currentQuestion > 0) {
@@ -263,19 +231,20 @@ document.getElementById('prev').addEventListener('click', () => {
     loadQuestion();
   }
 });
+
 document.getElementById('submitNow').addEventListener('click', () => {
   saveAnswer();
   submitQuiz();
 });
 
-/* ---------- Submit & Review ---------- */
+/* ------------------ Submit & Review ------------------ */
 function submitQuiz() {
   clearInterval(timer);
   let score = 0;
   for (let i = 0; i < quizData.length; i++) {
     const userAns = userAnswers[i];
-    const correct = quizData[i].answerText;
-    if (userAns !== undefined && normalize(userAns) === normalize(correct)) score++;
+    const correct = quizData[i].correctText;
+    if (userAns && normalize(userAns) === normalize(correct)) score++;
   }
 
   document.getElementById('quiz').innerHTML = '';
@@ -309,19 +278,17 @@ function submitQuiz() {
 function showReview(score) {
   let html = `<h2>Review</h2>
               <div class="score-box">Your final score: ${score} / ${quizData.length}</div>`;
-
   quizData.forEach((q, idx) => {
     const userAns = userAnswers[idx];
-    const correct = q.answerText;
+    const correct = q.correctText;
     html += `<div class="answer-block"><p><b>Q${idx + 1}:</b> ${escapeHtml(q.question)}</p>`;
-    
-    if (userAns === undefined) {
+    if (!userAns) {
       html += `<p class="unanswered">⚠ Unanswered</p>`;
     }
 
     q.options.forEach(opt => {
       const nOpt = normalize(opt);
-      const nUser = userAns === undefined ? null : normalize(userAns);
+      const nUser = userAns ? normalize(userAns) : '';
       const nCorrect = normalize(correct);
       if (nOpt === nCorrect && nUser === nCorrect) {
         html += `<p class="correct">✔ ${escapeHtml(opt)} (Your Answer)</p>`;
@@ -350,28 +317,29 @@ function showReview(score) {
   });
 }
 
-/* ---------- Boot: load JSON then start quiz ---------- */
+/* ------------------ Boot ------------------ */
 fetch('questions.json')
   .then(r => r.json())
   .then(data => {
     allQuestions = data.map(q => ({
       question: q.question,
-      options: [q.option1, q.option2, q.option3, q.option4],
-      correctText: q.option1
+      options: [q.option1, q.option2, q.option3, q.option4]
     }));
     if (!allQuestions.length) {
-      document.getElementById('quiz').innerHTML = '<p style="color:red">No valid questions found in questions.json — check format.</p>';
+      document.getElementById('quiz').innerHTML =
+        '<p style="color:red">No valid questions found in questions.json — check format.</p>';
       return;
     }
+    // Initialize quiz with new randomness each time
     prepareQuiz();
     startTimer();
     loadQuestion();
   })
   .catch(err => {
-    document.getElementById('quiz').innerHTML = `<p style="color:red">Failed to load questions.json — open dev console for details.</p>`;
+    document.getElementById('quiz').innerHTML =
+      `<p style="color:red">Failed to load questions.json — open dev console for details.</p>`;
     console.error(err);
   });
-
 </script>
 </body>
 </html>
