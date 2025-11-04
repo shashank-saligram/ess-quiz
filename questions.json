@@ -63,7 +63,7 @@
     "option4": "Ocean water level"
   },
   {
-    "question": "Assertion (A): Renewable energy sources reduce greenhouse gas emissions. Reason (R): They do not emit CO? during operation.",
+    "question": "Assertion (A): Renewable energy sources reduce greenhouse gas emissions. Reason (R): They do not emit CO2 during operation.",
     "option1": "A and R true, R is correct explanation",
     "option2": "A and R true, but unrelated",
     "option3": "A true, R false",
@@ -85,10 +85,10 @@
   },
   {
     "question": "A carbon credit equals:",
-    "option1": "1 tonne CO2?",
-    "option2": "1 kg CO2?",
-    "option3": "100 tonnes CO2?",
-    "option4": "10 tonnes CO2?"
+    "option1": "1 tonne CO2",
+    "option2": "1 kg CO2",
+    "option3": "100 tonnes CO2",
+    "option4": "10 tonnes CO2"
   },
   {
     "question": "Which SDG ensures Affordable and Clean Energy?",
@@ -121,13 +121,13 @@
   {
     "question": "The main GHG from agriculture is:",
     "option1": "Methane",
-    "option2": "CO2?",
+    "option2": "CO2",
     "option3": "Nitrous oxide",
     "option4": "Ozone"
   },
   {
     "question": "Carbon neutrality means:",
-    "option1": "Balancing emitted & absorbed CO?",
+    "option1": "Balancing emitted & absorbed CO2",
     "option2": "Zero energy use",
     "option3": "Only solar energy",
     "option4": "Avoiding trees"
@@ -175,7 +175,7 @@
     "option4": "Both false"
   },
   {
-    "question": "If a factory emits 500 tonnes CO? and offsets 600 tonnes via afforestation, it is:",
+    "question": "If a factory emits 500 tonnes CO2 and offsets 600 tonnes via afforestation, it is:",
     "option1": "Carbon negative",
     "option2": "Neutral",
     "option3": "Positive",
@@ -190,8 +190,8 @@
   },
   {
     "question": "Assertion (A): EVs have zero carbon footprint.Reason (R): They produce no tailpipe emissions.",
-    "option1": "A true, R false",
-    "option2": "A false, R true",
+    "option1": "A false, R true",
+    "option2": "A true, R false",
     "option3": "Both true",
     "option4": "Both false"
   },
@@ -260,15 +260,15 @@
   },
   {
     "question": "One carbon credit equals reduction of:",
-    "option1": "1 tonne CO2?",
-    "option2": "1 kg CO2?",
-    "option3": "100 g CO2?",
-    "option4": "100 tonnes CO2?"
+    "option1": "1 tonne CO2",
+    "option2": "1 kg CO2",
+    "option3": "100 g CO2",
+    "option4": "100 tonnes CO2"
   },
   {
     "question": "Which gas has highest Global Warming Potential?",
-    "option1": "SF6? (Sulfur hexafluoride)",
-    "option2": "CO2?",
+    "option1": "SF6 (Sulfur hexafluoride)",
+    "option2": "CO2",
     "option3": "Methane",
     "option4": "N2O"
   },
@@ -324,7 +324,7 @@
   {
     "question": "Ozone depletion is mainly caused by:",
     "option1": "CFCs",
-    "option2": "CO2?",
+    "option2": "CO2",
     "option3": "Methane",
     "option4": "Dust"
   },
@@ -616,7 +616,7 @@
     "option4": "Chernobyl recovery"
   },
   {
-    "question": "Which SDG promotes 'Decent Work and Economic Growth'�?",
+    "question": "Which SDG promotes 'Decent Work and Economic Growth'?",
     "option1": 8,
     "option2": 9,
     "option3": 10,
